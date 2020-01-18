@@ -1,0 +1,198 @@
+﻿@font-face {
+    font-family: 'Monda';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Monda Regular'), local('Monda-Regular'), url(https://fonts.gstatic.com/s/monda/v9/TK3tWkYFABsmjsphPho.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Monda';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local('Monda Bold'), local('Monda-Bold'), url(https://fonts.gstatic.com/s/monda/v9/TK3gWkYFABsmjsLaGw8Eneo.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+html {
+    height: 100%;
+    margin: 0%;
+}
+
+#body-bg {
+    /*background-color: #e0dadf;*/
+    padding:0;
+    margin:0;
+}
+
+.black {
+    background-color: #1B282F;
+    transition: 1s;
+}
+
+.nav-link {
+    color: black;
+    letter-spacing: 0.15em;
+    font-family: Monda;
+    font-size: 1.2rem;
+}
+
+.fa-bars{
+    color: black;
+    font-size: 30px;
+}
+.jumbo-home {
+    width: 100%;
+    height: 100vh;
+    background: url("images/header-img.jpg") no-repeat 50% 50%;
+    /*Photo by Stephan Seeber from Pexels*/
+    background-size: cover;
+}
+.header-h1{
+    font-family: Monda;
+}
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fa-angle-double-down {
+    color: white;
+    font-size: 4rem;
+    position: absolute;
+    bottom: 0%;
+    left: 48%;
+    transform: translate(-50%, 0);
+}
+
+.bounce {
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-30px);
+    }
+
+    60% {
+        transform: translateY(-15px);
+    }
+}
+.say-hello{
+    font-family: Monda;
+}
+.pixel-top{
+    width:100%;
+    height: 100vh;
+}
+.welcome{
+    font-family: Monda;
+}
+.welcQ1 {
+    color: #303063;
+}
+.welcQ2 {
+    color: #474793;
+}
+.welcQ3 {
+    color: #7050a3;
+}
+.home-info-container-fluid {
+    background-color: RGBA(156, 7, 87, 0.8);
+}
+.home-info-text-container{
+    background-color: white;
+}
+.home-text{
+    font-family: "Monda";
+}
+#btn-danger{
+    background-color: RGB(156, 7, 87);
+    border-color: RGB(156, 7, 87);
+}
+#btn-danger:hover{
+    background-color: rgb(101, 24, 66);
+    border-color: rgb(101, 24, 66);
+}
+
+
+
+/*SMALL MOBILE*/
+@media screen and (max-width: 407px) {
+    .header-text {
+        padding: 0;
+    }
+
+    .header-h1 {
+        font-size: 1.3rem;
+    }
+
+    #header-btn {
+        margin-top: 10px;
+        padding: 0.2rem;
+    }
+    .welcQ1, .welcQ2, .welcQ3 {
+        font-size: 1.2rem
+    }
+    .welcNoFurther{
+        font-size:1.1rem;
+    }
+    .fa-bars{
+        font-size: 24px;
+    }
+    .nav-pic{
+        width: 200px;
+    }
+    .fa-angle-double-down{
+        left: 44%;
+    }
+
+}
+
+/*BIGGER MOBILE AND IPAD*/
+@media (min-width: 408px) and (max-width: 767px) {
+    .header-h1 {
+        font-size: 1.8rem;
+    }
+    .welcQ1, .welcQ2, .welcQ3 {
+        font-size: 1.5rem;
+    }
+    welcNoFurther{
+        font-size: 1.3rem;
+    }
+    
+
+}
+
+/*CONTACT PAGE*/
+.jumbo-contact {
+    background-image: url("images/27504576.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+}
+.contact-form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.contact-row {
+    width:100%;
+    height: 100vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
