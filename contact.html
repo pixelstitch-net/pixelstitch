@@ -11,72 +11,68 @@
     <title>Contact | PixelStitch</title>
 </head>
 <body class="contact-body">
-    <header>
-        <!--NAVBAR-->
-        <div class="container-fluid p-0">
-            <nav class="navbar navbar-expand-md fixed-top bg-transparent">
-                <a class="navbar-brand" href="home.html">
-                    <img class="img-fluid nav-pic" src="https://fontmeme.com/permalink/200116/0080f14c5b78ed53ebc2fe680b41ef2d.png" alt="pixel-fonts" border="0" />
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon">
-                        <i class="fas fa-bars"></i>
-                    </span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link mx-2" href="#">Background</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mx-2" href="#">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mx-2" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
+    <!--NAVBAR-->
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-md fixed-top bg-transparent">
+            <a class="navbar-brand" href="home.html">
+                <img class="img-fluid nav-pic" src="https://fontmeme.com/permalink/200116/0080f14c5b78ed53ebc2fe680b41ef2d.png" alt="pixel-fonts" border="0" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <i class="fas fa-bars"></i>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="background.html">Background</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 d-none" href="#">Projects</a><!--d-none until projects pages finished-->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!--HEADER JUMBOTRON-->
+    <div class="jumbotron jumbo-contact jumbotron-fluid p-0 text-center">
+        <div class="row contact-row mx-auto">
+            <div class="col-12 col-md-4 mt-5 mt-md-0">
+                <div class="container header-text home-text px-0 px-md-1 pb-5" id="hello">
+                    <h1 class="header-h1 home-text">Say Hello!</h1>
+                    <p class="home-text mt-5 mt-md-2">Specific questions for the developers?</p>
+                    <p class="home-text mb-0"><strong>Front-end:</strong>  jess@pixelstitch.net</p>
+                    <p class="home-text mb-0"><strong>Back-end:</strong>  nick@pixelstitch.net</p>
                 </div>
-            </nav>
-        </div>
-        <!--HEADER JUMBOTRON-->
-        <div class="jumbotron jumbo-contact jumbotron-fluid p-0 text-center">
-            <div class="row contact-row mx-auto">
-                <div class="col-12 col-lg-4 mt-5 mt-lg-0">
-                    <div class="container header-text home-text px-0 px-md-1" id="hello">
-                        <h1 class="header-h1 home-text">Say Hello!</h1>
-                        <p class="home-text mt-5 mt-md-2">Specific questions for the developers?</p>
-                        <p class="home-text mb-0"><strong>Front-end:</strong>  jess@pixelstitch.net</p>
-                        <p class="home-text mb-0"><strong>Back-end:</strong>  nick@pixelstitch.net</p>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-8">
-                    <div class="container p-0 p-lg-2 contact-form text-center">
-                        <form>
-                            <div class="form-row px-3">
-                                <div class="col-6 pl-0">
-                                    <input type="text" class="form-control" required placeholder="First name">
-                                </div>
-                                <div class="col-6 pr-0">
-                                    <input type="text" class="form-control" required placeholder="Last name">
-                                </div>
+            </div>
+            <div class="col-12 col-md-8">
+                <div class="container p-0 p-md-2 contact-form text-center">
+                    <form>
+                        <div class="form-row px-3 mr-1">
+                            <div class="col-6 pl-0">
+                                <input type="text" class="form-control" required placeholder="First name">
                             </div>
-                            <div class="form-row p-3">
-                                <div class="col-12 px-0">
-                                    <input type="email" class="form-control" required placeholder="Email">
-                                </div>
+                            <div class="col-6 pr-0">
+                                <input type="text" class="form-control" required placeholder="Last name">
                             </div>
-                            <div class="form-row mb-3 px-3">
-                               <textarea class="form-control" id="textbox" rows="3"placeholder="Message..."></textarea>
+                        </div>
+                        <div class="form-row p-3 mr-1">
+                            <div class="col-12 px-0">
+                                <input type="email" class="form-control" required placeholder="Email">
                             </div>
-                            <button type="submit" class="btn btn-success">Send</button>
-                        </form>
-                    </div>
+                        </div>
+                        <div class="form-row mb-3 px-3 mr-1">
+                            <textarea class="form-control" id="textbox" rows="3" placeholder="Message..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-success">Send</button>
+                    </form>
                 </div>
             </div>
         </div>
-    </header>
-
-
+    </div>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="script.js"></script>
     <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>

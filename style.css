@@ -16,17 +16,6 @@
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-html {
-    height: 100%;
-    margin: 0%;
-}
-
-#body-bg {
-    /*background-color: #e0dadf;*/
-    padding:0;
-    margin:0;
-}
-
 .black {
     background-color: #1B282F;
     transition: 1s;
@@ -195,4 +184,20 @@ html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+/*background page*/
+.bg-pic{
+    background-image: url("images/9628284.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.name{
+    text-decoration: underline;
+}
+/*background-mobile*/
+@media screen and (max-width: 767px){
+    .learning{
+        font-size: 18px;
+    }
 }
